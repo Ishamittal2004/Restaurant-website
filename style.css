@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo",sans-serif;
+}
+
+.home{
+    width: 100%;
+    min-height:100vh ;
+    background-image: url(./images/home\ bg.png);
+    background-size:cover ;
+    display: flex; 
+    align-items: center;
+    justify-content: start;
+    position: relative ;
+    color: white;
+    text-transform: uppercase;
+}
+
+.left{
+    width:650px ;
+    min-height: 100vh;
+    position: relative; 
+}
+
+.left img{
+    width: 100%;
+    position: absolute;
+    left:-100px ;
+}
+
+.right{
+    width: 750px;
+    min-height: 100vh;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right .top{
+    font-size: 48px;
+    text-align: right;
+    margin-bottom:16px;
+}
+
+.right .top a{
+    display: block;
+    text-align: end;
+    font-size: 32px;
+    color: #ffc901;
+
+}
+
+.middle img{
+    width: 300px;
+}
+
+.bottom p{
+    font-size: 48px;
+}
+
+.bottom p span{
+    color: #ffc901;
+}
+
+.home-footer{
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+
+/* nav bar */
+header{
+    width: 100%;
+    padding: 16px 0;
+    background-color: #555553;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+nav{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav .logo img{
+    width: 145px;
+}
+
+ nav .logo{
+    margin-left: 100px;
+    margin-right: 100px; 
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    padding: 20px;
+}
+
+.link:hover{
+    color: #ffc901;
+}
+
+/* remove scroll bar */
+::-webkit-scrollbar{
+    width:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* about us */
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/about.png) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+}
+
+.about-text, title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text{
+    width: 600px;
+    flex-direction: column;
+}
+
+.title p{
+    margin-right:50px ;
+    margin-left: 50px;
+    font-size:48px ;
+}
+
+.title p span{
+    font-family: 'atma', cursive;
+} 
+
+.title, .des{
+   margin-bottom: 68px; 
+}
+
+.des{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2rem;
+    width: 500px;
+}
+
+.about-text a {
+    font-family: 'Overpass' , sans-serif;
+    font-size: 32px;
+}
+
+.about-text a span {
+    color: #ffc901;
+}
+
+/* menu */
+
+.menu{
+    min-height: 100vh;
+    width:100% ;
+    background-image:url(images/home\ bg.png) ;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 550px;
+}
+
+.menu-text {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(55%,10%);
+}
+
+.discount p {
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.discount {
+    width: 400px;
+}
+
+.discount p span {
+    font-size: 38px;
+}
+
+.discount p:last-child {
+    color: #ffc901;
+    font-size: 26px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* gallery */
+.gallery {
+    color: white;
+    background-image: url(./images/home\ bg.png );
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 1rem;
+}
+
+.gallery-images div {
+    width: min-content ;
+}
+
+.gallery-images img {
+    margin-top: 1 rem;
+    border: 1px solid #ffc901
+}
+
+/* BOOKING PAGE */
+
+.booking{
+    min-height: 100vh;
+    color:white;
+    background-image: url(./images/booking\ bg.png );
+    padding: 60px;
+}
+
+.sub-title{
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+}
+
+form{
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 60px;
+   gap: 4rem;
+}
+
+.input p{
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.first,.mid,.last{
+    display: flex;
+    align-items: center;
+    width: min-content;
+    gap: 10rem;
+}
+
+form.input {
+    width: 300px;
+}
+
+input, .input-i{
+    outline: none;
+    border:1px solid #ffc901;
+    width:300px ;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color:white;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+option {
+    color: black;
+    padding-top: 20px;
+}
+
+ ::placeholder{
+    color:#fff ;
+ }
+
+ input{
+    padding: 14px;
+ }
+
+ .input-i input{
+    border: none;
+    padding-right: 0;
+ }
+
+ .input-i{
+    padding-right: 14px;
+ }
+
+ .bx{
+    color: #ffc901;
+    cursor: pointer;
+ }
+
+ ::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    background-color: #ffc901;
+    padding: 5px;
+    border-radius: 3px;
+ }
+
+ .btn{
+    background-color: #ffc901;
+    background-color: none;
+    color: black;
+    padding: 15px 70px 10px 70px;
+    font-size: 32px;
+    font-family: 'Overpass', sans-serif; 
+    border-radius: 10px;
+    cursor: pointer;
+ }
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  /* Contact page */
+
+  .contact{
+    min-height: 100vh;
+    color: white;
+    background-image: url(./images/yellow\ dots.png);
+    background-color: #141414;
+    background-size: auto;
+    background-repeat:no-repeat ;
+    background-position: right bottom;
+  }
+
+  .contact img{
+    width: 100%;
+  }
+
+  .contact p, .contact-box p {
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .para{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 0;
+    margin: auto;
+  }
+
+  .para .bx{
+     font-size: 62px;
+  }
+
+  .name{
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color:#ffc901;
+  }
+
+  .contact-box{
+    padding: 50px;
+    background-color: #1c1c1c;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .text{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-box a{
+    font-family: 'Overpass', sans-serif;
+    color: #ffc901;
+    font-size: 24px;
+  }
+
+  .contact-box a p{
+    color: white;
+  }
+
+  .contact-box h2{
+    font-size: 32px;
+    font-weight: lighter;
+    color: #ffc901;
+  }
+
+  /* footer */
+
+  footer{
+    background-color: #1c1c1c;
+    color: white;
+    border-top: 6px dotted #ffc901;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    gap: 3rem;
+  }
+
+  footer img{
+    width: 230px;
+  }
+
+  .box-icon .bx{
+    font-size: 26px;
+    color: #141414;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .box-icon a{
+    margin: 5px;
+  }
+
+
+
